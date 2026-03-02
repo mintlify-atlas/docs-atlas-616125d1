@@ -1,0 +1,110 @@
+{
+  "projectType": "saas",
+  "projectName": "Unibot",
+  "projectDescription": "Multi-provider LLM chat interface with streaming responses, image/video generation, and subscription tiers",
+  "theme": "almond",
+  "primaryColor": "#fafafa",
+  "lightColor": "#a3a3a3",
+  "darkColor": "#0f0f0f",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Product",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart", "installation"]
+          },
+          {
+            "group": "Features",
+            "pages": ["features/chat", "features/media-generation", "features/resume-builder", "features/drive-integration"]
+          },
+          {
+            "group": "Pricing",
+            "pages": ["pricing/plans", "pricing/billing"]
+          }
+        ]
+      },
+      {
+        "tab": "User Guides",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["guides/authentication", "guides/first-chat"]
+          },
+          {
+            "group": "Chat Features",
+            "pages": ["guides/chat-interface", "guides/model-selection", "guides/image-inputs", "guides/custom-models"]
+          },
+          {
+            "group": "Media Studio",
+            "pages": ["guides/image-generation", "guides/video-generation"]
+          },
+          {
+            "group": "Additional Features",
+            "pages": ["guides/resume-builder", "guides/google-drive"]
+          }
+        ]
+      },
+      {
+        "tab": "Integration",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": ["integration/overview", "integration/environment"]
+          },
+          {
+            "group": "Providers",
+            "pages": ["integration/aws-bedrock", "integration/openai", "integration/openrouter", "integration/google-ai"]
+          },
+          {
+            "group": "Advanced",
+            "pages": ["integration/custom-models", "integration/rate-limits", "integration/database"]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Help",
+            "pages": ["resources/faq", "resources/troubleshooting"]
+          },
+          {
+            "group": "Reference",
+            "pages": ["resources/architecture", "resources/changelog"]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-provider AI chat (AWS Bedrock, OpenAI, OpenRouter)",
+    "Real-time streaming responses",
+    "Image and video generation via Google AI",
+    "Subscription tiers with Stripe integration",
+    "Google OAuth authentication",
+    "Custom model support",
+    "Resume and cover letter builder",
+    "Google Drive integration",
+    "Vision model support with image uploads",
+    "Rate limiting for free and paid users"
+  ],
+  "publicApiSurface": [
+    "POST /api/chat - Stream chat completions",
+    "POST /api/chats - Create new chat",
+    "GET /api/chats - List user chats",
+    "GET /api/chats/[id] - Get chat details",
+    "DELETE /api/chats/[id] - Delete chat",
+    "POST /api/generate - Generate images",
+    "POST /api/media - Generate videos",
+    "GET /api/models/custom - List custom models",
+    "POST /api/models/custom - Add custom model",
+    "GET /api/models/global - List global models",
+    "POST /api/stripe/checkout - Create checkout session",
+    "POST /api/stripe/webhook - Handle Stripe webhooks",
+    "POST /api/resume/generate - Generate resume/cover letter",
+    "GET /api/user/profile - Get user profile",
+    "PUT /api/user/profile - Update user profile"
+  ]
+}
